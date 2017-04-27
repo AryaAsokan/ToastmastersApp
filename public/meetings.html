@@ -1,0 +1,17 @@
+<div>
+	<h3>Meetings</h3>
+	<div>
+		<select ng-model = "formData.text">
+			<option value="DEC 16">DEC 16</option>
+  			<option value="JAN 17">JAN 17</option>
+  			<option value="FEB 17">FEB 17</option>
+  			<option value="MAR 17">MAR 17</option>
+		</select>
+		<button ng-click = "loadSheet()">Show</button>
+		<table class = "table">
+			<tr ng-repeat = "rows in data">
+				<td ng-repeat = "row in rows">{{row}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
